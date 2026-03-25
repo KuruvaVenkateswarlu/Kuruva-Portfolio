@@ -435,6 +435,8 @@
     justify-content: space-between;
     align-items: center;
     transition: padding-left 0.3s;
+    text-decoration: none;
+    color: inherit;
   }
   .cert-item:hover { padding-left: 16px; }
   .cert-name { font-size: 0.95rem; color: var(--text); }
@@ -522,6 +524,19 @@
     .nav-links { display: none; }
     .hero { padding: 0 24px; }
     .hero-content { grid-template-columns: 1fr; gap: 28px; }
+    .hero-links {
+      margin-top: 36px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .hero-links .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: min(100%, 280px);
+      text-align: center;
+    }
     .profile-pic-wrap {
       order: -1;
       justify-self: start;
@@ -566,6 +581,7 @@
       <p class="hero-desc">Building scalable web platforms and automated pipelines. Turning complex problems into elegant, working solutions.</p>
       <div class="hero-links">
         <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="resume.pdf" download class="btn-primary">Download Resume</a>
         <a href="#projects" class="btn-ghost">View Projects →</a>
       </div>
     </div>
@@ -637,7 +653,7 @@
           <span class="tech-pill">PHP</span>
         </div>
       </div>
-      <a href="#" class="project-link">View →</a>
+      <a href="https://github.com/KuruvaVenkateswarlu/property_managementSystem" class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
     </div>
     <div class="project-item">
       <div class="project-num">02</div>
@@ -652,7 +668,7 @@
           <span class="tech-pill">YAML</span>
         </div>
       </div>
-      <a href="#" class="project-link">View →</a>
+      <a href="https://github.com/KuruvaVenkateswarlu/CI-CD-using-AWS" class="project-link" target="_blank" rel="noopener noreferrer">View →</a>
     </div>
   </div>
 </section>
@@ -706,27 +722,27 @@
 <section id="certificates">
   <div class="section-label">Certificates</div>
   <div class="cert-list reveal">
-    <div class="cert-item">
+    <a href="https://drive.google.com/file/d/1Ui4etPr1grqXrqMn4s1UL6xm5Cezw7Yg/view" class="cert-item" target="_blank" rel="noopener noreferrer">
       <div>
         <div class="cert-name">Privacy and Security in Online Social Media</div>
         <div class="cert-issuer">NPTEL</div>
       </div>
       <div class="cert-date">Oct 2025</div>
-    </div>
-    <div class="cert-item">
+    </a>
+    <a href="https://drive.google.com/file/d/1Iz_nrUzCXGqUwExwZFG0XclqHVwFjpWf/view" class="cert-item" target="_blank" rel="noopener noreferrer">
       <div>
         <div class="cert-name">Master Generative AI & Generative AI Tools (ChatGPT & more)</div>
         <div class="cert-issuer">Infosys Springboard</div>
       </div>
       <div class="cert-date">Aug 2025</div>
-    </div>
-    <div class="cert-item">
+    </a>
+    <a href="https://drive.google.com/file/d/1nzVoyBXxNcorpEah6ONnaP2lW40-4Mu5/view" class="cert-item" target="_blank" rel="noopener noreferrer">
       <div>
         <div class="cert-name">Build Generative AI Apps and Solutions with No-Code Tool</div>
         <div class="cert-issuer">Infosys Springboard</div>
       </div>
       <div class="cert-date">Aug 2025</div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -784,7 +800,7 @@
           github.com/KuruvaVenkateswarlu
         </div>
       </a>
-      <a href="tel:+919014689625" class="contact-link">
+      <a href="https://wa.me/9014689625" target="_blank" rel="noopener noreferrer" class="contact-link">
         <div class="contact-link-icon">☎</div>
         <div>
           <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">Phone</div>
